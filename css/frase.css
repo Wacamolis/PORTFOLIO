@@ -1,0 +1,84 @@
+.frase{
+    width: 100%;
+    background: var(--color-negro);
+    height: 50vh;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem;
+
+    position: relative;
+
+  /*  border: 3px solid rgb(116, 250, 114); */
+}
+
+
+.frase .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ /*   border: 3px solid rgb(250, 114, 211); */
+
+}
+.frase p{
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2rem;
+
+}
+
+.corchete{
+    width: 4rem;
+    height: 4rem;
+}
+
+.taza{
+    width: 24rem;
+    height: 24rem;
+    
+    position: absolute;
+    right: 10rem;
+    top: 10rem;
+
+}
+
+/* RESPONSIVE*/
+
+/* Oculto por defecto (solo se muestra en responsive) */
+.frase__icono{ display:none; }
+
+/* 890px  */
+@media (max-width: 890px){
+    
+    .frase .corchete{display: none;} /* Ocultamos corchetes laterales*/
+
+    .frase__icono{
+        display: block;
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+    .frase{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 1rem;
+        
+    }
+    .frase .container{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        gap: 1rem;
+    }
+    .taza{
+        position: static;
+        width: 18rem;
+        height: 18rem;
+    }
+}

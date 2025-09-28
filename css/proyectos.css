@@ -1,0 +1,157 @@
+.proyectos{
+    width: 100%;
+    background: var(--color-blangris);
+    color: var(--color-negro);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+   /* border: 3px solid rgb(116, 250, 114); */
+
+}
+
+.proyectos .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0rem;
+
+   /* border: 3px solid rgb(250, 114, 211); */
+}
+
+.proyectos__contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-between;   
+   /* flex-wrap: wrap; */
+    gap: 2rem;
+    align-items: start;
+
+ /*   border: 3px solid rgb(114, 216, 250); */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+
+    background: white;
+    border-radius: 1.5rem;
+    height: 28rem;
+    width: 23rem; 
+    box-shadow:
+        0 .05rem 0.15rem rgba(0,0,0,.06),
+        0 .6rem 1.6rem -0.2rem rgba(0,0,0,.12);
+    transition: all 0.3s ease-in-out;    
+}
+
+.card:hover{
+  transform: scale(1.02);     
+}
+
+.imagen_proyecto{
+    background-color: var(--color-morado);
+    border-radius: 1rem;
+    height: 16rem;
+}
+
+.texto-proyecto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ .titulo-proyecto{
+    font-size: 1.3rem;
+    font-weight: 700;
+ }
+ .tags{
+    font-size: 0.8rem;
+    color: var(--color-grisoff);
+
+    display: flex;
+    gap: 0.5rem;
+ }
+ .tags span{
+    border-radius: 1rem;
+    border: 1px solid var(--color-grisoff);
+    padding: 0.2rem 0.6rem;
+ }
+
+ .botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+/* Boton para ver proyecto */
+
+ .btn_ver-proyecto{
+    background: var(--color-verde);
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.2rem;
+
+    color: var(--color-negro);
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: transform .12s ease, background-color .12s ease;
+ }
+
+ .btn_ver-proyecto:hover{
+    transform: scale(1.04);
+ }
+ .btn_ver-proyecto:active{
+    background: var(--color-celeste);
+}
+
+/* Boton para ver codigo */
+
+ .btn_ver-codigo{
+    background: var(--color-naranja);
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.2rem;
+
+    color: var(--color-negro);
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: transform .12s ease, background-color .12s ease;
+ }
+
+ .btn_ver-codigo:hover{
+    transform: scale(1.04);
+ }
+ .btn_ver-codigo:active{
+    background: var(--color-morado);
+}
+
+
+
+/* 2 columnas desde tablet */
+@media (max-width: 780px){
+    .proyectos__contenedor{
+        flex-wrap: wrap;
+    }
+  .card{ flex-basis: calc((100% - 2rem) / 2); }
+}
+
+/* 1 columna en mobile (ya lo tenías) */
+@media (max-width: 480px){
+  .proyectos__contenedor{ 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 2rem; }
+    .proyectos .container{
+        text-align: center;
+    }
+
+  .card{ flex: 0 0 23rem; }
+}

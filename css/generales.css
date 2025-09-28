@@ -1,0 +1,68 @@
+
+:root {
+    /* ===== Paleta de colores ===== */
+    /* Base */
+    --color-negro: #252525;
+    --color-blangris: #e6e6e6;
+    --color-grisoff: #bcbcbc;
+
+    /* Principales */
+    --color-azul: #2d2be3;
+    --color-verde: #24ff91;
+    --color-naranja: #ff8026;
+    --color-morado: #9566f4;
+    --color-celeste: #04f7e2;
+
+    /* Tipografías */
+    --ffamily-display: 'FT Supervisor', sans-serif;
+    --ffamily-body: 'Urbanist', sans-serif;
+
+    /* Texto base */
+    --fsize-body: 1rem;
+    --fpeso-body: 500;
+
+    /* Espaciados */
+    --gap-1: 0.5rem;
+    --gap-2: 1rem;
+    --gap-3: 1.5rem;
+    --gap-4: 2rem;
+    --gap-6: 4rem;
+
+    /* Otros */
+    --radius: 0.5rem;
+    --shadow-1: 0 0.2rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Botones ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+    border-radius: var(--radius);
+
+    background-color: var(--color-verde);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-negro);
+    
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background 0.2s, transform 0.1s;
+}
+.btn:active {
+    transform: translateY(0.1rem);
+}
+
+
+.titulo-seccion{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-negro);
+}
+
+.subtitulo-seccion{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-negro);
+}

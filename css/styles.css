@@ -1,0 +1,42 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.page {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ffamily-body);
+}
+
+/* ===== Container ===== */
+.container {
+    width: 100%;
+    max-width: 1200px;
+
+  /*  max-width: 480px;*/
+}
+
+/* Desktop *//*
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* ===== Reset listas ===== */
+ul, ol {
+    text-decoration: none;    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ===== Reset links ===== */
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
